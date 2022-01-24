@@ -1,0 +1,99 @@
+.container{
+    width: 600px;
+    padding:20px;
+    position: relative;
+}
+.container svg{
+    position: absolute;
+    right:1rem;
+    font-size: 1.2rem;
+    color: var(--gray-600);
+    cursor: pointer;
+    transition: filter 0.5s;
+}
+.container svg:hover{
+    filter: brightness(0.8)
+}
+.container h1{
+    color: var(--gray-600);
+    font-weight: 300;
+    font-size: 2.18rem;
+    line-height: 47.66px;
+    margin-bottom: 1.5rem;
+}
+.container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 80vh;
+    overflow: scroll;
+}
+.container ul .item{
+    display: flex;
+    padding: 1rem;
+}
+.item + .item{
+    border-top: 1px solid var(--dark-blue-600);
+}
+.container ul li img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+.info{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info strong{
+    font-family: Roboto;
+    color: var(--gray-600);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 19px;
+    margin-bottom: 0.2rem;
+}
+.info span{
+    font-family: Roboto;
+    font-style: normal;
+    color: var(--gray-600);
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height:1.2rem;
+}
+.info .confirmed{
+    background-color:var(--green-500); 
+    color: var(--white);
+    font-weight: bold;
+    padding: 0rem 0.2rem;
+}
+.info .pendente{
+    background-color:var(--red-500);
+    color: var(--white);
+    font-weight: bold;
+    padding: 0rem 0.2rem;
+}
+
+
+
+@media (max-width: 750px) {
+    .container{
+        width: 80vw;
+        margin: 0 auto;
+        padding: 0.75rem;
+    }
+}
+@media (max-width: 370px)  {
+    .info span{
+        font-size: 0.75rem;
+    }
+    .container h1{
+        color: var(--gray-600);
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 37.66px;
+        margin-bottom: 1.5rem;
+    }
+}

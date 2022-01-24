@@ -1,0 +1,46 @@
+.invisible{
+    display: none;
+}
+.container{
+    position: relative;
+
+}
+.container nav{
+    position: absolute;
+    background-color: var(--white);
+    padding: 0.5rem 0.3rem;
+}
+.container nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.container nav ul li{
+    color: var(--red-500);
+    width: max-content;
+}
+.container nav ul li:hover{
+    text-decoration: underline;
+}
+.buttonItem button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color:var(--white-400);
+    margin-left:  0.188rem;
+
+}
+.buttonItem img{
+    width: 1.063rem;
+
+}
+
+@media (max-width: 430px) {
+    .container nav{
+        right: 0;
+    }
+}

@@ -1,0 +1,49 @@
+.headerlist{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.headerlist .buttons{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.headerlist .buttons button{
+    width: 103px;
+    border: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:var(--blue-500);
+    color: var(--white);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    border-radius: 0.3rem;
+    font-size: 0.875rem;
+}
+.headerlist  h1{
+    color: var(--gray-600);
+    font-weight: 300;
+    font-size: 2.18rem;
+    line-height: 47.66px;
+    margin-bottom: 6px;
+}
+
+@media (max-width: 840px) {
+    .headerlist{
+        flex:1;
+    }
+}
+@media (max-width: 526px) {
+    .headerlist{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content:center;
+
+    }
+    .headerlist .buttons{
+        justify-content:space-between;
+        width: 100%;
+    }
+}

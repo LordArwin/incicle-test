@@ -1,0 +1,37 @@
+:root{
+  --backgroud-color: #F2F3F5;
+  --gray-600 : #707070;
+  --green-500: #248c46;
+  --white: #FFF;
+  --white-200: #FDFDFD;
+  --white-400: #DBDBDB;
+  --boards-frame-shadow: rgba(0, 0, 0, 0.161);
+  --header-shadow: rgba(0, 0, 0, 0.051);
+  --yellow-200: #FFF2DE;
+  --yellow-300: #DCD1C0;
+  --red-500: #EE8686;
+  --dark-blue-600: rgba(52, 137, 177, 0.1);
+  --blue-500: #3489B1;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Open Sans',  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button{
+  cursor: pointer;
+}
+
+html,body {
+  height: 100vh;
+  background-color: var(--background-color);
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
