@@ -1,0 +1,22 @@
+.header{
+    height: 4rem;
+    box-shadow: 0px 3px 6px var(--header-shadow);
+    padding: 0 5rem;
+    display: flex;
+    align-items: center;    
+}
+.logo{
+    width: 100%;
+    max-width: 1650px;
+    margin: 0 auto;
+}
+.logo img{
+    height: 2.25rem;
+}
+
+@media (max-width: 686px) {
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+}

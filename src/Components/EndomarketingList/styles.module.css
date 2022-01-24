@@ -1,0 +1,118 @@
+
+.item{
+    background-color: var(--white);
+    height:5.8rem;
+    box-shadow: 0px 3px 6px var(--boards-frame-shadow);
+    display: flex;
+    align-items:center;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+.item + .item{
+    margin-top:0.625rem;
+}
+
+
+.tagsItem {
+    display: flex;
+    align-items:center;
+    margin: 0.31rem  0 0.37rem 0;
+}
+.tagsItem .type{
+    font-family: 'Roboto', sans-serif,;
+    font-size: 0.4rem;
+    font-weight: 700;
+    line-height: 0.43rem;
+    text-transform: uppercase;
+    background-color:var(--blue-500);
+    padding: 0.1rem 0.2rem;
+    color: var(--white);
+}
+.tagsItem .eventColor{
+    background-color: var(--red-500);
+}
+.tagsItem .releaseColor{
+    background-color: var(--gray-600);
+}
+.tagsItem .publicationColor{
+    background-color:var(--blue-500);
+}
+.tagsItem .infoItem{
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    color: var(--gray-600);
+    margin-left: 0.35rem;
+    line-height:0.75rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+}
+
+.infoConfirmation{
+    text-decoration: underline;
+    color: var(--blue-500)
+}
+
+.imgItem{
+    width: 73px;
+    height: 73px;
+}
+.imgItem img{
+    height:100%;
+    width: 100%;
+}
+
+.infoItem{
+    display: flex;
+    margin-left: 1.06rem;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+}
+.infoItem strong{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--gray-600);
+    font-weight:700;
+
+}
+.infoItem p {
+    color: var(--gray-600);
+    font-weight: 300;
+    font-size: 0.813rem;
+    line-height: 1.10rem;
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+@media (max-width: 840px) {
+    .item{
+        flex-direction: column;
+        width: 300px;
+        height: 300px;
+    }
+    .imgItem{
+        width: 150px;
+        height: 150px;
+    }
+    .infoItem strong{
+        font-size: 0.95rem;
+    
+    }
+    .infoItem {
+        width: 100%;
+        margin: 0;
+        margin-top: 0.3rem;
+    }
+    .item + .item{
+        margin-top:0rem;
+    }
+    .infoItem p {
+        max-width: 100%;
+    }
+
+}

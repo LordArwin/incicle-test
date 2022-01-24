@@ -1,0 +1,75 @@
+
+.frame{
+    margin-top:1.063rem;
+    padding: 0.75rem;
+    width: 279px;
+    height:333px;
+    box-shadow: 0px 3px 6px var(--boards-frame-shadow);
+    background-color:var(--white-200);
+}
+
+.frame strong{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--gray-600);
+    line-height: 1.17rem;
+}
+
+.frameItem{
+    width: 262.08px;
+    height: 86.39px;
+    background-color: var(--dark-blue-600);
+    padding: 0.1rem 0.25rem;
+}
+
+.frameItem span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.813rem;
+    color: var(--gray-600);
+    line-height: 0.952rem;
+    font-weight: 400;
+}
+.frameHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.2rem;
+}
+.frameHeader span{
+    flex: 1;
+}
+.frameHeader button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 100%;
+    width: 1rem;
+    height: 1rem;
+    background-color:var(--white);
+    margin-left:  0.188rem;
+
+}
+
+
+
+.frameImgs{
+    display: flex;
+    justify-content: space-between;
+}
+.frameImgs img {
+    width: 60px;
+    height: 60px;
+    padding-bottom: 0.2rem;
+}
+
+.frameItem + .frameItem{
+    margin-top:1.063rem;
+}
+
+
+@media (max-width: 1033px) {
+    .frame{
+        margin-top: 0px;
+    }
+}
